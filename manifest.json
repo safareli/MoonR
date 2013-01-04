@@ -1,0 +1,19 @@
+{
+  "name": "Moon Reader",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Read in darck",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "web_accessible_resources": ["debut_dark.png"] 
+}
