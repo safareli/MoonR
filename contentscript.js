@@ -1,4 +1,4 @@
-$('*:not(img,.syntaxhighlighter)').css({
+$('*:not(.syntaxhighlighter)').css({
 	'background-color': 'transparent',//#000000
 	'color':"#878A85",
 	"border-color": 'rgba(168, 78, 105, 0.5)'
@@ -11,9 +11,3 @@ $('code').css({
 	'color':"#E9C228"
 });
 $('body').css('background','url('+ chrome.extension.getURL('debut_dark.png')+') repeat 0 0');
-
-var ss = document.styleSheets[0];
-var selectedCss = "selection {background:transparent; color:#E08524;}";
-ss.insertRule('::-moz-'+selectedCss, 0);
-ss.insertRule('::'+selectedCss, 0);
-ss.insertRule('::-webkit-'+selectedCss, 0);

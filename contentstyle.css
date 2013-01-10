@@ -1,0 +1,12 @@
+::-moz-selection {
+	background:transparent; 
+	color:#E08524;
+}
+::selection {
+	background:transparent; 
+	color:#E08524;
+}
+::-webkit-selection {
+	background:transparent; 
+	color:#E08524;
+}
