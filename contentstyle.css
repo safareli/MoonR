@@ -1,12 +1,38 @@
-::-moz-selection {
-	background:transparent; 
-	color:#E08524;
+.moonr-injected ::-moz-selection {
+	background:transparent !important; 
+	color:#E08524 !important;
 }
-::selection {
-	background:transparent; 
-	color:#E08524;
+.moonr-injected ::selection {
+	background:transparent !important; 
+	color:#E08524 !important;
 }
-::-webkit-selection {
-	background:transparent; 
-	color:#E08524;
+.moonr-injected ::-webkit-selection {
+	background:transparent !important; 
+	color:#E08524 !important;
+}
+.moonr-injected * {
+	text-shadow: none !important;
+	background-color: transparent !important;
+	color: #878A85 !important;
+	border-color: rgba(168, 78, 105, 0.5) !important;
+}
+.moonr-injected a {
+	color: #906 !important;
+}
+
+.moonr-injected h1,
+.moonr-injected h2,
+.moonr-injected h3,
+.moonr-injected h4,
+.moonr-injected h5,
+.moonr-injected h6 {
+	color: #DD1515 !important;
+}
+.moonr-injected code{
+	background-color: #1B2426 !important;
+	color:#E9C228 !important;
+}
+.moonr-injected,
+.moonr-injected body{
+	background: url('chrome-extension://__MSG_@@extension_id__/debut_dark.png') repeat 0 0 !important;
 }
