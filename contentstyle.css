@@ -10,7 +10,7 @@
 	background:transparent !important; 
 	color:#E08524 !important;
 }
-.moonr-injected * {
+.moonr-injected *{
 	text-shadow: none !important;
 	background-color: transparent !important;
 	color: #878A85 !important;
@@ -19,7 +19,35 @@
 .moonr-injected a {
 	color: #906 !important;
 }
-
+/*prettyprint START*/
+.moonr-injected body pre.prettyprint, 
+.moonr-injected body code.prettyprint{
+        background-color: #000 !important;
+        border-radius: 8px !important;
+}
+.moonr-injected body pre .str,
+.moonr-injected body code .str { color: #65B042 !important; }                         /* string  - green */
+.moonr-injected body pre .kwd,
+.moonr-injected body code .kwd { color: #E28964 !important; }                         /* keyword - dark pink */
+.moonr-injected body pre .com,
+.moonr-injected body code .com { color: #AEAEAE !important; font-style: italic !important; }     /* comment - gray */
+.moonr-injected body pre .typ,
+.moonr-injected body code .typ { color: #89bdff !important; }                         /* type - light blue */
+.moonr-injected body pre .lit,
+.moonr-injected body code .lit { color: #3387CC !important; }                         /* literal - blue */
+.moonr-injected body pre .pun,
+.moonr-injected body code .pun { color: #fff !important; }                            /* punctuation - white */
+.moonr-injected body pre .pln,
+.moonr-injected body code .pln { color: #fff !important; }                            /* plaintext - white */
+.moonr-injected body pre .tag,
+.moonr-injected body code .tag { color: #89bdff !important; }                         /* html/xml tag - light blue */
+.moonr-injected body pre .atn,
+.moonr-injected body code .atn { color: #bdb76b !important; }                         /* html/xml attribute name  - khaki */
+.moonr-injected body pre .atv,
+.moonr-injected body code .atv { color: #65B042 !important; }                         /* html/xml attribute value - green */
+.moonr-injected body pre .dec,
+.moonr-injected body code .dec { color: #3387CC !important; }                         /* decimal - blue */
+/*prettyprint END*/
 .moonr-injected h1,
 .moonr-injected h2,
 .moonr-injected h3,
@@ -28,11 +56,31 @@
 .moonr-injected h6 {
 	color: #DD1515 !important;
 }
-.moonr-injected code{
+.moonr-injected code:not(.prettyprint):not(.prettyprint *):not(.syntaxhighlighter):not(.syntaxhighlighter *) {
 	background-color: #1B2426 !important;
 	color:#E9C228 !important;
 }
 .moonr-injected,
-.moonr-injected body{
+.moonr-injected body,
+/*facebook STAT*/
+.moonr-injected .fbNub,/*dakecili chatis saxeli roa */
+.moonr-injected .fbChatSidebar,/*marjvena chati*/
+.moonr-injected .uiScrollableAreaWrap,/*mesijebis requestebis da notificationebis*/
+.moonr-injected .jewelFooter, /*mesijebis requestebis da notificationebis "see all"*/
+.moonr-injected .jewelFlyout, /*setingebis da securitis dropdaunebi imat marjvniv roa */
+.moonr-injected .fbNubFlyoutInner, /*titon chatis texqsti*/
+.moonr-injected .uiContextualDialogContent,/*mrjven chatze  muss ro miitan da dialogi chans*/
+.moonr-injected .uiContextualLayer, /*mrjven chatze  muss ro miitan da dialogi chans*/
+.moonr-injected .fbPhotoSnowliftContainer, /*pupupphoto start */
+.moonr-injected .uiContextualLayerParent /*pupupphoto end*/
+/*facebook END*/
+{
 	background: url('chrome-extension://__MSG_@@extension_id__/debut_dark.png') repeat 0 0 !important;
+}
+.moonr-injected .fullScreenAvailable{
+	background: hsla(0, 0%, 0%, .60) !important;
+}
+
+.moonr-injected  #blueBarHolder #pageLogo{/*facebookis logos teqsti*/
+	font-size: 0;
 }
